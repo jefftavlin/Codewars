@@ -1,0 +1,8 @@
+def openOrSenior(data):
+    final = []
+    for item in data:
+       if item[0] >= 55 and item[-1] >7:
+           final.append('Senior')
+       else:
+          final.append('Open')
+    return final
