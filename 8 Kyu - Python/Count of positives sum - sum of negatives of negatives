@@ -1,0 +1,8 @@
+def count_positives_sum_negatives(arr):
+    if len(arr) <=0:
+        return []
+    else:
+        positive = sum([1 for n in arr if n >0])
+        negative = sum([n for n in arr if n<0])
+        final = [positive,negative]
+        return final
