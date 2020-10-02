@@ -1,0 +1,7 @@
+def anagrams(word, words):
+    wordz = []
+    for item in words:
+        if set(item) == set(word):
+            if len(item) == len(word):
+                wordz.append(item)
+    return wordz
