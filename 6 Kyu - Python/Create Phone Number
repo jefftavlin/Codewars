@@ -1,0 +1,4 @@
+def create_phone_number(n):
+    lst = [str(number) for number in n]
+    complete = ''.join(lst)
+    return '(' + complete[0:3] + ')' + ' ' + complete[3:6] + '-' + complete[6:]
