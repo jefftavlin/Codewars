@@ -1,0 +1,4 @@
+def add_binary(a,b):
+    summed = a + b
+    summed = bin(summed)
+    return summed[2:]
