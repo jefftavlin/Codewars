@@ -1,0 +1,3 @@
+def digitize(n):
+    lst = [int(num) for num in str(n)]
+    return lst[::-1]
