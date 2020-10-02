@@ -1,0 +1,9 @@
+def iq_test(numbers):
+    numbers = numbers.split()
+    nums = [int(item) for item in numbers]
+    evens = [str(item) for item in nums if item % 2 ==0]
+    odds = [str(item) for item in nums if item % 2 !=0]
+    if len(evens) > len(odds):
+        return numbers.index(odds[0])+1
+    else:
+        return numbers.index(evens[0])+1
