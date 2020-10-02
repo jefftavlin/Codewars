@@ -1,0 +1,15 @@
+def title_case(title, minor_words=''):
+    title = title.lower()
+    minor_words_lst = minor_words.lower().split()
+    split_v2 = []
+    for item in title.split():
+        if item in minor_words_lst:
+            split_v2.append(item)
+        else:
+            split_v2.append(item.title())
+    if len(split_v2) > 1:
+        return split_v2[0].title() + ' ' + ' '.join(split_v2[1:])
+    elif title.lower() == minor_words:
+        return title.title()
+    else:
+        return '
