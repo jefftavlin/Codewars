@@ -1,0 +1,9 @@
+def square_digits(num):
+    lst = []
+    new = str(num)
+    for character in new:
+        character = int(character)
+        lst.append(character*character)
+    s = [str(i) for i in lst]
+    res = int(''.join(s))
+    return res
