@@ -1,0 +1,13 @@
+def DNA_strand(dna):
+    #A-T or T-A C-G, G-C
+    lst = []
+    for character in dna:
+        if character == 'A':
+            lst.append('T')
+        if character == 'T':
+            lst.append('A')
+        if character == 'C':
+            lst.append('G')
+        if character == 'G':
+            lst.append('C')
+    return ''.join(lst)
