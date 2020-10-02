@@ -1,5 +1,0 @@
--- Create your SELECT statement here
-SELECT age, COUNT(age) as total_people
-FROM people
-GROUP by AGE
-HAVING COUNT(age) >= 10
