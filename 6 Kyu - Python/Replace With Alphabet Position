@@ -1,0 +1,5 @@
+def alphabet_position(text):
+    lst = [c for c in text.lower()]
+    lst2 = [item for item in lst if item.isalpha() ==True]
+    lst3 = [str(ord(item) -96) for item in lst2]
+    return ' '.join(lst3)
