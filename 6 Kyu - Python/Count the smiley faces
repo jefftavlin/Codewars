@@ -1,0 +1,13 @@
+def count_smileys(arr):
+    good = []
+    for item in arr:
+        if len(item) ==3:
+            if item[0] == ':' or item[0] == ';':
+                if item[-1] == ')' or item[-1] == 'D':
+                    if item[1] == '-' or item[1] =='~':
+                        good.append(item)
+        else:
+            if item[0] == ':' or item[0] == ';':
+                if item[-1] == ')' or item[-1] == 'D':
+                    good.append(item)
+    return len(good)
