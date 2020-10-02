@@ -1,0 +1,9 @@
+def calculate_years(principal, interest, tax, desired):
+    year = 0
+    if principal == desired:
+        return 0
+    else:
+        while principal <= desired:
+            year+=1
+            principal = principal + (principal * interest) - (principal * interest*tax)
+        return year
