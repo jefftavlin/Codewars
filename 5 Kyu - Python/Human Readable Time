@@ -1,0 +1,20 @@
+def make_readable(seconds):
+    min, sec = divmod(seconds, 60) 
+    hour, min = divmod(min, 60)
+    
+    if sec > 9:
+        sec = str(sec)
+    else:
+        sec = '0' + str(sec)
+    
+    if min > 9:
+        min = str(min)
+    else:
+        min = '0' + str(min)
+    
+    if hour > 9:
+        hour = str(hour)
+    else:
+        hour = '0' + str(hour)
+  
+    return f'{hour}:{min}:{sec}'
