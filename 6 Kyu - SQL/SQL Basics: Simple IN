@@ -1,0 +1,4 @@
+-- Create your SELECT statement here
+SELECT departments.name, departments.id
+FROM departments
+WHERE departments.id IN (SELECT sales.department_id FROM sales WHERE sales.price > 98)
