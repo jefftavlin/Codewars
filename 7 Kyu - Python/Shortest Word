@@ -1,0 +1,5 @@
+def find_short(s):
+   lst = list(s.split())
+   length = [len(item) for item in lst]
+   sorted(length)
+   return min(length)
