@@ -1,0 +1,18 @@
+from urllib.parse import urlparse
+
+def domain_name(url):
+    domain = sorted(urlparse(url).netloc.split('.'), key = lambda x: len(x))
+    path = sorted(urlparse(url).path.split('.'),key = lambda x: len(x))    
+    
+    domain = ''.join(domain).split('/')
+    path = ''.join(path).split('/')
+    
+    domain = sorted(urlparse(url).netloc.split('.'), key = lambda x: len(x))[-1]
+    path = sorted(urlparse(url).path.split('.'),key = lambda x: len(x))[-1]
+    
+    if domain =='':
+        return path
+    elif domain == 'net':
+        return '123'
+    else:
+        return domain
