@@ -1,0 +1,9 @@
+def cakes(recipe, available):
+    required = [f for f in recipe if f in available]
+    check = [f for f in recipe]
+    d = {k: available[k]/recipe[k] for k in recipe.keys() & available}
+    
+    if check != required:
+        return 0
+    else:
+        return int(min(d.values()))
