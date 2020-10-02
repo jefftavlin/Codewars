@@ -1,0 +1,9 @@
+def countBits(n):
+    binned = bin(n)
+    binned = binned.replace('b', '')
+    binned = binned.replace('0','')
+    lst = [int(n) for n in binned]
+    if len(binned) == 0:
+        return 0
+    else:
+        return sum(lst)
