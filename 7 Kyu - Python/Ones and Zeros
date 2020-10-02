@@ -1,0 +1,5 @@
+def binary_array_to_number(arr):
+  lst = [str(item) for item in arr]
+  final = ''.join(lst)
+  final = int(final,2)
+  return final
