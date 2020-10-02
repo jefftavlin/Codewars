@@ -1,0 +1,17 @@
+def unique_in_order(iterable):
+    if len(iterable) == 0:
+        return []
+    else:   
+        lst = []
+        x = -1
+        y = 0
+        while x <= len(iterable):
+            x+=1
+            y+=1
+            try:
+                if iterable[x] != iterable[y]:
+                    lst.append(iterable[x])
+            except IndexError:
+                pass
+        lst.append(iterable[-1])
+    return lst 
