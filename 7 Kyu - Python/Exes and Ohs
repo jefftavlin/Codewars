@@ -1,0 +1,8 @@
+def xo(s):
+    s = s.upper()
+    if 'X' not in s.upper() and 'O' not in s.upper():
+        return True
+    if s.count('X') == s.count('O'):
+        return True
+    if s.count('X') != s.count('O'):
+        return False
