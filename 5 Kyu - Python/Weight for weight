@@ -1,0 +1,6 @@
+def order_weight(strng):
+    lst = [item for item in strng.split(' ')]
+    final = [sum([int(i) for i in item]) for item in lst]
+    zipped = list(zip(lst,final))
+    done = [w[0] for w in sorted(zipped,key = lambda x: (x[1],x[0]))]
+    return ' '.join(done)
