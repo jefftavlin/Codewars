@@ -1,0 +1,10 @@
+def move_zeros(array):
+    zero = [0 for item in array if item ==0]
+    non = [item for item in array if item != 0 or str(item) == 'False']
+    final = non + zero
+    if False in non:
+        zero.remove(0)
+    if len(array) == len(final):
+        return final
+    else:
+        return final[0:-1]
