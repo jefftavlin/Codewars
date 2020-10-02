@@ -1,0 +1,8 @@
+def namelist(names):
+    lst = [item['name'] for item in names]
+    if len(lst) <= 1:
+        return ''.join(lst)
+    elif len(lst) ==0:
+        return []
+    elif len(lst) >1:
+        return ', '.join(lst[0:-1]) + ' & ' + ''.join(lst[-1])
