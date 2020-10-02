@@ -1,0 +1,13 @@
+def spin_words(sentence):
+    lst = list(sentence.split())
+    #this portion takes the 1 string sentence and splits it
+    lst2 = []
+    for item in lst:
+        if len(item) >=5:
+        #If your item is longer than 5 letters reverse it below
+            lst2.append(item[::-1])
+        else:
+            lst2.append(item)
+    return ' '.join(lst2)
+    # join the list together as one string add a space
+        
