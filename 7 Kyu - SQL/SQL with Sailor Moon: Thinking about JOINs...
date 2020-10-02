@@ -1,0 +1,6 @@
+--your code here--
+SELECT ss.senshi_name as sailor_senshi, ss.real_name_jpn as real_name,
+c.name as cat, s.school as school
+FROM sailorsenshi ss
+LEFT JOIN schools s on ss.school_id = s.id 
+LEFT JOIN cats c ON ss.cat_id = c.id 
