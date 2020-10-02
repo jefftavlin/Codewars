@@ -1,0 +1,5 @@
+def sum_two_smallest_numbers(numbers):
+    numbers = sorted(numbers)
+    print(sorted(numbers))
+    lst = numbers[0:2]
+    return sum(lst)
