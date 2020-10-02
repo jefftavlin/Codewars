@@ -1,0 +1,4 @@
+INSERT into participants(name, age,attending)
+VALUES ('Sponge Bob',24,True);
+
+SELECT * FROM participants;
