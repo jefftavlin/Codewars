@@ -1,0 +1,8 @@
+def get_sum(a,b):
+    if a > b:
+        start = b
+        stop  = a
+    else:
+        start = a
+        stop = b
+    return sum(range(start,stop+1))
