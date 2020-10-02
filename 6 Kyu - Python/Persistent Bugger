@@ -1,0 +1,12 @@
+import numpy
+def persistence(n):
+    if n < 10:
+        return 0
+    lst = [int(x) for x in str(n)]
+    result = numpy.prod(lst)
+    count = [result]
+    while result >= 10:
+        count.append(result)
+        lst2 = [int(x) for x in str(result)]
+        result = numpy.prod(lst2)
+    return len(count)
