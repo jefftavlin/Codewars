@@ -1,0 +1,7 @@
+def solution(number):
+  lst = [num for num in range(number)]
+  lst2 = []
+  for number in lst:
+      if number % 3 == 0 or number % 5 ==0:
+          lst2.append(number)
+  return sum(lst2)
