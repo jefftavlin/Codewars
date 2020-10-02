@@ -1,0 +1,5 @@
+def min_max(lst):
+  x = min(lst)
+  y = max(lst)
+  final = [x,y]
+  return final
