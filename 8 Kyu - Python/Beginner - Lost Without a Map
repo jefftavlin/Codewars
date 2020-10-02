@@ -1,0 +1,4 @@
+import numpy as np
+def maps(a):
+    array = np.array(a) *2
+    return list(array
