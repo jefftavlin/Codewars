@@ -1,0 +1,4 @@
+import numpy as np
+def square_sum(numbers):
+    numbers = np.array(numbers)
+    return sum(numbers * numbers)
