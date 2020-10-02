@@ -1,0 +1,19 @@
+def pig_it(text):
+    lst = text.split()
+    punc = ['?','!']
+    pig  = [item[0] + 'ay' for item in lst if item not in punc]
+    final_piggy = [item[1:] for item in lst]
+    latin_lst = []
+    n  = 0
+    for item in range(len(lst)):
+        try:
+            latin = final_piggy[n] + pig[n]
+            latin_lst.append(latin)
+            n += 1
+        except IndexError:
+            pass
+    checker = [item for item in lst if item in punc]
+    if len(checker) >= 1:
+        latin_lst.append(checker[0])
+    print(' ' .join(latin_lst))
+    return ' ' .join(latin_lst)
