@@ -1,0 +1,10 @@
+def duplicate_encode(word):
+    lst = [x for x in word.lower()]
+    lst2 = [lst.count(item) for item in lst]
+    lst3 = []
+    for item in lst2:
+        if item <=1:
+            lst3.append('(')
+        else:
+            lst3.append(')')
+    return ''.join(lst3)
