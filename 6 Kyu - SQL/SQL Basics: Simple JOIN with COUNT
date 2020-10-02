@@ -1,6 +1,0 @@
--- Create your SELECT statement here
-SELECT people.id, people.name, COUNT(toys.id) as toy_count
-FROM people
-JOIN toys on people.id = toys.people_id
-GROUP by people.id
-ORDER BY people.id
