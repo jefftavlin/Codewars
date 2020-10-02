@@ -1,0 +1,11 @@
+def is_isogram(string):
+    lst = [character.upper() for character in string]
+    count = [lst.count(item) for item in lst]
+    sorted(count)
+    try:
+        if max(count) > 1:
+            return False
+        if max(count) == 1:
+            return True
+    except ValueError:
+        return True
