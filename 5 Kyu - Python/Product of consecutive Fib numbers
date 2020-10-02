@@ -1,0 +1,16 @@
+def productFib(prod):
+    n = 100
+    fib_nums = [1,1]
+    l = [1,1]
+    required = n - len(l)
+    final = []
+    
+    if prod == 0:
+        return [0,1,True]
+    
+    for i in range(n+1):
+        l.append(l[i]+l[i+1])
+        if l[i] * l[i+1] == prod:
+            return [l[i],l[i+1],True]
+        elif l[i] * l[i+1] > prod:
+            return [l[i],l[i+1],False]
