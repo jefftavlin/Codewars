@@ -1,0 +1,5 @@
+/*  SQL  */
+SELECT race, count(race)
+FROM demographics
+GROUP BY race
+ORDER BY count(race) DESC
