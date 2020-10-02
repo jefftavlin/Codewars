@@ -1,0 +1,6 @@
+def to_jaden_case(string):
+    string.split()
+    lst = [item for item in string]
+    title = ''.join(lst)
+    title = title.split()
+    return ' '.join(x.capitalize() for x in title)
