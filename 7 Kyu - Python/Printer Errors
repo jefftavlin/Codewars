@@ -1,0 +1,6 @@
+def printer_error(s):
+    lst = ['a','b','c','d','e','f','g','h','i','j','k','l','m']
+    good = [character for character in s if character in lst]
+    length = len(s)
+    bad = length - len(good)
+    return str(bad) + "/" + str(length)
