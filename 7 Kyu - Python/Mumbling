@@ -1,0 +1,5 @@
+def accum(s):
+    lst = [item for item in s]
+    for i in range(len(lst)):
+        lst[i] = (lst[i] * (i+1)).title()
+    return '-'.join(lst)
