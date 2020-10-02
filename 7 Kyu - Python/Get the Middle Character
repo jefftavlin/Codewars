@@ -1,0 +1,11 @@
+import numpy as np
+
+def get_middle(s):
+    s = [item for item in s]
+    nums = [i for i in range(len(s))]
+    if len(s) % 2 ==0:
+        start = int(np.median(nums))
+        stop = start + 2
+        return ''.join(s[start:stop])
+    else:
+        return s[int(np.median(nums))]
