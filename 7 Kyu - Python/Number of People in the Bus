@@ -1,0 +1,6 @@
+def number(bus_stops):
+    lst = []
+    for item in bus_stops:
+        value = item[0] - item[-1]
+        lst.append(value)
+    return sum(lst)
