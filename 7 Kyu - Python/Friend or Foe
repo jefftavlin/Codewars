@@ -1,0 +1,3 @@
+def friend(x):
+    lst = [item for item in x if len(item) == 4]
+    return lst
