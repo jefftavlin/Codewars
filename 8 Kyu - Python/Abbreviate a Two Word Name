@@ -1,0 +1,4 @@
+def abbrevName(name):
+    final = name.split(' ')
+    final = [item[0] for item in final]
+    return '.'.join(final).title()
