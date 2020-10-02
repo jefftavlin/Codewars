@@ -1,0 +1,10 @@
+def validate_pin(pin):
+    try:
+        lst = [int(character) for character in pin]
+        if len(lst) ==4 or len(lst) ==6:
+            return True
+        else:
+            return False
+    except ValueError:
+        return False
+   
