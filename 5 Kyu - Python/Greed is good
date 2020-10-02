@@ -1,0 +1,26 @@
+from collections import Counter
+
+def score(dice):
+    score = 0
+    count = dict(Counter(dice))
+    for key, value in count.items():
+        if key == 1:
+            if value == 3:
+                score += 1000
+            elif value > 3:
+                score += (1000 + (value - 3) * 100)
+            else:
+                score += key * 100 * value
+        elif key in [6,4,3,2]:
+            if value >= 3:
+                score += key * 100
+        elif key ==5:
+            if value == 3:
+                score += 500
+            elif value > 3:
+                score += (500 + (value - 3) * 10)
+            else:
+                score += key * 10 * value
+    print(dice)
+    return score
+    
