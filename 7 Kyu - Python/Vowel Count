@@ -1,0 +1,2 @@
+def get_count(input_str):
+    return len([c for c in input_str if c in ['a','e','i','o','u']])
