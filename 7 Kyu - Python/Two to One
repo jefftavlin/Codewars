@@ -1,0 +1,16 @@
+def longest(s1, s2):
+    lst = []
+    lst2 = []
+    for character in s1:
+        if character.isalpha() == True:
+            lst.append(character)
+        else:
+            pass
+    for character in s2:
+        if character.isalpha() == True:
+            lst2.append(character)
+        else:
+            pass
+    lst3 = lst + lst2
+    lst3 = sorted(list(set(lst3)))
+    return ''.join(lst3)
