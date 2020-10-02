@@ -1,0 +1,15 @@
+import string
+
+def rot13(message):
+    word = ""
+    lower = ''.join(list(string.ascii_lowercase) * 5)
+    upper = ''.join(list(string.ascii_uppercase) * 5)
+        
+    for c in message:
+        if c in lower:
+            word += lower[lower.index(c)+13]
+        elif c in upper:
+            word += upper[upper.index(c)+13]
+        else:
+            word += c
+    return word
