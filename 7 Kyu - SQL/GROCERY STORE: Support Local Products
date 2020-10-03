@@ -1,0 +1,5 @@
+SELECT COUNT(name) as products, country
+FROM products
+WHERE country in ('Canada','United States of America')
+GROUP BY country
+ORDER BY products DESC;
