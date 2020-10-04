@@ -1,7 +1,6 @@
-SELECT id, name
-FROM departments
-WHERE EXISTS
-  (SELECT *
-  FROM sales
-  WHERE price > 98.00)
-LIMIT 5;
+SELECT D.id, D.name
+FROM departments AS D
+WHERE EXISTS 
+  (SELECT * 
+   FROM sales AS S
+   WHERE D.id = S.department_id AND S.price > 98)
