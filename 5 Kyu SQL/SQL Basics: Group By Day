@@ -1,0 +1,5 @@
+SELECT CAST(LEFT(CAST(created_at as varchar),10)as date) as day, 
+            description, COUNT(description)
+from events
+WHERE NAME like 'trained'
+GROUP BY day,description
